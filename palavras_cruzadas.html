@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Bem Vindo</title>
+</head>
+
+<body>
+
+    <!-- palavras:
+    1 - registradores
+    2 - ula
+    3 - cpu
+    4 - cs
+    5 - data-bus
+    6 - dual-core
+    7 - quad-core
+    8 - adress-bus
+    9 - dma
+    10 - rom
+    11 - ram
+    12 - eprom
+    13 - memoria-de-massa
+    14 - flash
+    15 - i5
+    16 - i7 -->
+
+
+    <div class="palavras_cruzadas">
+        <div class="container">
+            <div class="inputs">
+
+                <input onkeyup="palavra_resgis()" class="p_regis" id="inp_regis_r">
+                <input id="registradores_e">
+                <input id="registradores_g">
+                <input id="registradores_i">
+                <input id="registradores_s">
+                <input id="registradores_t">
+                <input id="registradores_r">
+
+                <input id="regis_ula_a" placeholder="a">
+
+                <input id="registradores_d">
+                <input id="registradores_o">
+                <input id="registradores_r">
+                <input id="registradores_e">
+                <input id="registradores_s"><br>
+
+                <input class="p_ula" id="ula_l"><br>
+
+                <input class="p_cpu" id="cpu_c" placeholder="c">
+                <input id="cpu_p">
+
+                <input id="ula_csp_cs_u" placeholder="u"><br>
+
+                <input class="p_flash" id="flash_f" placeholder="f">
+
+                <input class="p_sub" id="cs_sub_s" placeholder="s">
+                <input id="sub_u">
+                <input id="sub_b">
+                <input placeholder="-">
+                <input id="sub_a">
+                <input id="sub_t">
+                <input id="sub_a">
+                <input id="sub__dual_d" placeholder="d"> <br>
+
+                <input class="p_i5" id="i5_5" placeholder="5">
+                <input id="flash_l" placeholder="l">
+
+                <input class="p_dual_flash" id="dual_u">
+                <!-- rom -->
+                <input class="p_rom" id="rom_r"><br>
+
+                <input id="memoria_m">
+                <input id="memoria_e">
+                <input id="memoria_m">
+                <input id="memoria_o">
+                <input id="memoria_r">
+                <input id="memoria_i">
+                <input id="flash_a" placeholder="a">
+
+                <input placeholder="-">
+                <input id="memoria_d" placeholder="d">
+                <input id="memoria_e">
+                <input placeholder="-">
+                <input id="memoria_m">
+                <input id="memoria_a">
+                <input id="memoria_s">
+                <input id="memoria_s">
+
+                <input id="dual_a" placeholder="a">
+                <!-- adress -->
+                <input class="p_adress" id="adress_a">
+                <!-- rom -->
+                <input id="rom_o">
+                <!-- ram -->
+                <input id="ram_r"><br>
+
+                <input class="p_i5" id="i7_7" placeholder="7">
+                <input id="flash_s" placeholder="s">
+
+                <input id="dual_l">
+                <!-- adress -->
+                <input class="p_adress" id="adress_d">
+                <!-- rom -->
+                <input id="rom_m">
+                <!-- ram -->
+                <input id="ram_a"><br>
+
+                <input class="p_flash" id="flash_h" placeholder="h">
+
+                <input class="p_dual_flash" placeholder="-">
+
+                <!-- adress -->
+                <input class="p_adress" id="adress_r">
+
+                <!-- ram -->
+                <input class="p_ram" id="ram_m"><br>
+
+                <!-- quadr-core -->
+                <input class="p_quad" id="quad_q">
+                <input id="quad_u">
+                <input id="quad_a">
+                <input id="quad_d">
+                <input placeholder="-">
+
+                <!-- c_dual core -->
+                <input id="dual_c">
+
+                <input id="quad_o">
+                <input id="quad_r">
+                <input id="quad_e"><br>
+
+                <input class="p_dual2" id="dual_o">
+                <!-- adress -->
+                <input class="p_adress" id="adress_s"><br>
+
+                <input class="p_dual2" id="dual_r">
+                <input class="p_adress" id="adress_s"><br>
+
+                <!-- eprom -->
+                <input class="p_eprom" id="eprom_m">
+                <input id="eprom_o">
+                <input id="eprom_r">
+                <input id="eprom_p">
+
+                <input id="dual_e">
+                <input id="divisao" placeholder="-"><br>
+                <input class="p_adress2" id="adress_b"><br>
+                <input class="p_adress2" id="adress_u"><br>
+                <input class="p_adress2" id="adress_u"><br>
+
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+<script>
+
+
+    function palavra_resgis(){
+
+        var letra_r = inp_regis_r.value;
+
+        if (letra_r == "r") {
+
+            inp_regis_r.style.color = "blue";
+            
+        } else {
+
+            inp_regis_r.style.color = "red";
+
+        }
+        
+    }
+
+
+
+
+</script>

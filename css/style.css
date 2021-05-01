@@ -1,0 +1,101 @@
+body{
+    border: 0;
+    margin: 10% 0;
+    padding: 0;
+    background-color: burlywood;
+}
+
+.palavras_cruzadas{
+    width: 100%;
+    height: 600px;
+    background: black;
+}
+
+.container{
+    height: 100%;
+    max-width: 1000px;
+    background: blue;
+    margin: 0 auto;
+}
+
+.inputs{
+    height: 100%;
+    padding: 20px 20px;
+}
+
+input{
+    border-style: none;
+    width: 30px;
+    height: 30px;
+    margin-left: 0;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.p_regis{
+    margin-left: 11.6%;
+}
+
+.p_ula{
+    margin-left: 39.3%;
+}
+
+.p_cpu{
+   margin-left: 31.4%;
+}
+ 
+.p_sub{
+    margin-left: 3.3%;
+}
+
+.p_dual{
+    margin-left: 48.1%;
+}
+
+.p_dual_flash{
+    margin-left: 31.2%;
+}
+
+.p_flash{
+    margin-left: 24.1%;
+}
+
+.p_i5{
+    margin-left: 20.1%
+}
+
+#dual_l{
+    margin-left: 31.2%;
+}
+
+.p_quad{
+    margin-left: 39.6%;
+}
+
+.p_rom{
+    margin-left: 12%;
+}
+
+.p_adress{
+    margin-left: 8.1%;
+}
+
+.p_ram{
+    margin-left: 4%
+}
+
+.p_dual2{
+    margin-left: 59.5%
+}
+
+.p_eprom{
+    margin-left: 43.7%
+}
+
+#divisao{
+    margin-left: 8%;
+}
+
+.p_adress2{
+    margin-left: 71.5%
+}
