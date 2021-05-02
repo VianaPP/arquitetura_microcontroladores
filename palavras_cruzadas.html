@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cor_inputs.css">
     <title>Bem Vindo</title>
 </head>
 
@@ -29,160 +30,1220 @@
     15 - i5
     16 - i7 -->
 
+    <div class="info">
+        <h1>Bem vindo ao palavras cruzadas ArqComp :D </h1><br>
+        <h2>Use apenas letras minúsculas!!</h2><br>
+        <p>Letras corretas aparecem na cor Verde.</p>
+        <p>Letras incorretas aparecem na cor Vermelha.</p>
+        <p>Tente acertar todas as palavra!!.</p>
+        <p>Boa Sorte.</p><br><br><br>
+    </div>
 
     <div class="palavras_cruzadas">
         <div class="container">
             <div class="inputs">
 
-                <input onkeyup="palavra_resgis()" class="p_regis" id="inp_regis_r">
-                <input id="registradores_e">
-                <input id="registradores_g">
-                <input id="registradores_i">
-                <input id="registradores_s">
-                <input id="registradores_t">
-                <input id="registradores_r">
+                <!-- letras palavra registradores -->
+                <input onkeyup="regis_r()" class="p_regis cor_regis" id="inp_regis_r">
+                <input onkeyup="regis_e()" class="cor_regis" id="inp_regis_e">
+                <input onkeyup="regis_g()" class="cor_regis" id="inp_regis_g">
+                <input onkeyup="regis_i()" class="cor_regis" id="inp_regis_i">
+                <input onkeyup="regis_s()" class="cor_regis" id="inp_regis_s">
+                <input onkeyup="regis_t()" class="cor_regis" id="inp_regis_t">
+                <input onkeyup="regis_r2()" class="cor_regis" id="inp_regis_r2">
+                <!-- letras palavra registradores -->
 
-                <input id="regis_ula_a" placeholder="a">
+                <!-- letras palavra ula -->
+                <input onkeyup="regis_ula_a()" class="cor_regis" id="inp_regis_ula_a">
 
-                <input id="registradores_d">
-                <input id="registradores_o">
-                <input id="registradores_r">
-                <input id="registradores_e">
-                <input id="registradores_s"><br>
+                <!-- letras palavra registradores -->
+                <input onkeyup="regis_d()" class="cor_regis" id="inp_regis_d">
+                <input onkeyup="regis_o()" class="cor_regis" id="inp_regis_o">
+                <input onkeyup="regis_r3()" class="cor_regis" id="inp_regis_r3">
+                <input onkeyup="regis_e2()" class="cor_regis" id="inp_regis_e2">
+                <input onkeyup="regis_s2()" class="cor_regis" id="inp_regis_s2"><br>
+                <!-- letras palavra registradores -->
 
-                <input class="p_ula" id="ula_l"><br>
+                <!-- letras palavra ula -->
+                <input onkeyup="ula_l()" class="p_ula cor_ula" id="inp_ula_l"><br>
 
-                <input class="p_cpu" id="cpu_c" placeholder="c">
-                <input id="cpu_p">
+                <!-- letras palavra cpu-->
+                <input onkeyup="cpu_c()" class="p_cpu cor_cpu" id="inp_cpu_c">
+                <input onkeyup="cpu_p()" class="cor_cpu" id="inp_cpu_p">
 
-                <input id="ula_csp_cs_u" placeholder="u"><br>
+                <!-- letras palavra ula -->
+                <input onkeyup="ula_cpu_u()" class="cor_ula" id="inp_ula_cpu_u"><br>
 
-                <input class="p_flash" id="flash_f" placeholder="f">
+                <!-- letras palavra flash-->
+                <input onkeyup="flash_f()" class="p_flash cor_flash" id="inp_flash_f">
 
-                <input class="p_sub" id="cs_sub_s" placeholder="s">
-                <input id="sub_u">
-                <input id="sub_b">
-                <input placeholder="-">
-                <input id="sub_a">
-                <input id="sub_t">
-                <input id="sub_a">
-                <input id="sub__dual_d" placeholder="d"> <br>
+                <!-- letras palavra sub/cs-->
+                <input onkeyup="cs_sub_s()" class="p_sub cor_cs" id="inp_cs_sub_s">
+                <input onkeyup="sub_u()" class="cor_sub" id="inp_sub_u">
+                <input onkeyup="sub_b()" class="cor_sub" id="inp_sub_b">
+                <input placeholder="-" class="cor_div">
+                <input onkeyup="sub_a()" class="cor_sub" id="inp_sub_a">
+                <input onkeyup="sub_t()" class="cor_sub" id="inp_sub_t">
+                <input onkeyup="sub_a2()" class="cor_sub" id="inp_sub_a2">
+                <!-- letra palavra dual-core -->
+                <input onkeyup="sub_dual_d()" class="cor_dual" id="inp_sub_dual_d"> <br>
+                <!-- letras palavra sub/cs-->
 
-                <input class="p_i5" id="i5_5" placeholder="5">
-                <input id="flash_l" placeholder="l">
+                <input onkeyup="i5_5()" class="p_i5 cor_i5" id="inp_i5_5">
 
-                <input class="p_dual_flash" id="dual_u">
-                <!-- rom -->
-                <input class="p_rom" id="rom_r"><br>
+                <!-- letras palavra flash-->
+                <input onkeyup="flash_l()" class="cor_flash" id="inp_flash_l">
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_u()" class="p_dual_flash cor_dual" id="inp_dual_u">
 
-                <input id="memoria_m">
-                <input id="memoria_e">
-                <input id="memoria_m">
-                <input id="memoria_o">
-                <input id="memoria_r">
-                <input id="memoria_i">
-                <input id="flash_a" placeholder="a">
+                <!-- letras palavra rom-->
+                <input onkeyup="rom_r()" class="p_rom cor_rom" id="inp_rom_r"><br>
 
-                <input placeholder="-">
-                <input id="memoria_d" placeholder="d">
-                <input id="memoria_e">
-                <input placeholder="-">
-                <input id="memoria_m">
-                <input id="memoria_a">
-                <input id="memoria_s">
-                <input id="memoria_s">
+                <!-- letras palavra memoria de massa-->
+                <input onkeyup="memoria_m()" class="cor_memoria" id="inp_memoria_m">
+                <input onkeyup="memoria_e()" class="cor_memoria" id="inp_memoria_e">
+                <input onkeyup="memoria_m2()" class="cor_memoria" id="inp_memoria_m2">
+                <input onkeyup="memoria_o()" class="cor_memoria" id="inp_memoria_o">
+                <input onkeyup="memoria_r()" class="cor_memoria" id="inp_memoria_r">
+                <input onkeyup="memoria_i()" class="cor_memoria" id="inp_memoria_i">
 
-                <input id="dual_a" placeholder="a">
-                <!-- adress -->
-                <input class="p_adress" id="adress_a">
-                <!-- rom -->
-                <input id="rom_o">
-                <!-- ram -->
-                <input id="ram_r"><br>
+                <!-- letras palavra flash-->
+                <input onkeyup="flash_a()" class="cor_flash" id="inp_flash_a">
 
-                <input class="p_i5" id="i7_7" placeholder="7">
-                <input id="flash_s" placeholder="s">
+                <!-- letras palavra memoria de massa-->
+                <input placeholder="-" class="cor_div">
+                <input onkeyup="memoria_d()" class="cor_memoria" id="inp_memoria_d">
+                <input onkeyup="memoria_e2()" class="cor_memoria" id="inp_memoria_e2">
+                <input placeholder="-" class="cor_div">
+                <input onkeyup="memoria_m3()" class="cor_memoria" id="inp_memoria_m3">
+                <input onkeyup="memoria_a()" class="cor_memoria" id="inp_memoria_a">
+                <input onkeyup="memoria_s()" class="cor_memoria" id="inp_memoria_s">
+                <input onkeyup="memoria_s2()" class="cor_memoria" id="inp_memoria_s2">
 
-                <input id="dual_l">
-                <!-- adress -->
-                <input class="p_adress" id="adress_d">
-                <!-- rom -->
-                <input id="rom_m">
-                <!-- ram -->
-                <input id="ram_a"><br>
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_a()" class="cor_dual" id="inp_dual_a">
 
-                <input class="p_flash" id="flash_h" placeholder="h">
+                <!-- letras palavra adress-bus-->
+                <input onkeyup="adress_a()" class="p_adress cor_adress" id="inp_adress_a">
 
-                <input class="p_dual_flash" placeholder="-">
+                <!-- letras palavra rom-->
+                <input onkeyup="rom_o()" class="cor_rom" id="inp_rom_o">
 
-                <!-- adress -->
-                <input class="p_adress" id="adress_r">
+                <!-- letras palavra ram-->
+                <input onkeyup="ram_r()" class="cor_ram" id="inp_ram_r"><br>
 
-                <!-- ram -->
-                <input class="p_ram" id="ram_m"><br>
+                <input onkeyup="i7_7()" class="p_i5 cor_i7" id="inp_i7_7">
+
+                <!-- letras palavra flash-->
+                <input onkeyup="flash_s()" class="cor_flash" id="inp_flash_s">
+
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_l()" class="cor_dual" id="inp_dual_l">
+
+                <!-- letras palavra adress-bus-->
+                <input onkeyup="adress_d()" class="p_adress cor_dma" id="inp_adress_d">
+
+                <!-- letras palavra rom-->
+                <input onkeyup="rom_m()" class="cor_dma" id="inp_rom_m">
+
+                <!-- letras palavra ram-->
+                <input onkeyup="ram_a()" class="cor_dma" id="inp_ram_a"><br>
+
+                <!-- letras palavra flash-->
+                <input onkeyup="flash_h()" class="p_flash cor_flash" id="inp_flash_h">
+                <!-- letra palavra dual-core -->
+                <input class="p_dual_flash cor_div" placeholder="-">
+
+                <!-- letras palavra adress-bus-->
+                <input onkeyup="adress_r()" class="p_adress cor_adress" id="inp_adress_r">
+
+                <!-- letras palavra ram-->
+                <input onkeyup="ram_m()" class="p_ram cor_ram" id="inp_ram_m"><br>
 
                 <!-- quadr-core -->
-                <input class="p_quad" id="quad_q">
-                <input id="quad_u">
-                <input id="quad_a">
-                <input id="quad_d">
-                <input placeholder="-">
+                <input onkeyup="quad_q()" class="p_quad cor_quad" id="inp_quad_q">
+                <input onkeyup="quad_u()" class="cor_quad" id="inp_quad_u">
+                <input onkeyup="quad_a()" class="cor_quad" id="inp_quad_a">
+                <input onkeyup="quad_d()" class="cor_quad" id="inp_quad_d">
+                <input placeholder="-" class="cor_div">
 
-                <!-- c_dual core -->
-                <input id="dual_c">
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_c()" class="cor_dual" id="inp_dual_c">
 
-                <input id="quad_o">
-                <input id="quad_r">
-                <input id="quad_e"><br>
+                <!-- letras palavra quad-core -->
+                <input onkeyup="quad_o()" class="cor_quad" id="inp_quad_o">
+                <input onkeyup="quad_r()" class="cor_quad" id="inp_quad_r">
+                <input onkeyup="quad_e()" class="cor_quad" id="inp_quad_e"><br>
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_o()" class="p_dual2 cor_dual" id="inp_dual_o">
 
-                <input class="p_dual2" id="dual_o">
-                <!-- adress -->
-                <input class="p_adress" id="adress_s"><br>
+                <!-- letras palavra adress-bus-->
+                <input onkeyup="adress_s1()" class="p_adress cor_adress" id="inp_adress_s1"><br>
 
-                <input class="p_dual2" id="dual_r">
-                <input class="p_adress" id="adress_s"><br>
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_r()" class="p_dual2 cor_dual" id="inp_dual_r">
+
+                <!-- letras palavra adress-bus-->
+                <input onkeyup="adress_s2()" class="p_adress cor_adress" id="inp_adress_s2"><br>
 
                 <!-- eprom -->
-                <input class="p_eprom" id="eprom_m">
-                <input id="eprom_o">
-                <input id="eprom_r">
-                <input id="eprom_p">
+                <input onkeyup="eprom_m()" class="p_eprom cor_eprom" id="inp_eprom_m">
+                <input onkeyup="eprom_o()" class="cor_eprom" id="inp_eprom_o">
+                <input onkeyup="eprom_r()" class="cor_eprom" id="inp_eprom_r">
+                <input onkeyup="eprom_p()" class="cor_eprom" id="inp_eprom_p">
 
-                <input id="dual_e">
-                <input id="divisao" placeholder="-"><br>
-                <input class="p_adress2" id="adress_b"><br>
-                <input class="p_adress2" id="adress_u"><br>
-                <input class="p_adress2" id="adress_u"><br>
+                <!-- letra palavra dual-core -->
+                <input onkeyup="dual_e()" class="cor_dual" id="inp_dual_e">
+                <input type="text" id="divisao" placeholder="-" class="cor_div"><br>
+
+                <!-- letras palavra adress-bus-->
+                <input onkeyup="adress_b()" class="p_adress2 cor_adress" id="inp_adress_b"><br>
+                <input onkeyup="adress_u()" class="p_adress2 cor_adress" id="inp_adress_u"><br>
+                <input onkeyup="adress_s3()" class="p_adress2 cor_adress" id="inp_adress_s3"><br>
 
             </div>
         </div>
     </div>
 
+    <div class="palavras_dicas">
+
+        <h1>Respostas</h1>
+        <p>É o processador, ele realiza instruções de programas de computadores. <input class="cor_cpu"></p>
+        <p>Unidade lógica e aritmética, circuito digital que realiza operações de adição e boolean. <input class="cor_ula"></p>
+        <p>São partes de processador que, servem para armazenamento da informação binária. <input class="cor_regis"></p>
+        <p>É aponte que permite com que processador  faça leitura do que está armazenado no disco rígido. <input class="cor_ram"></p>
+        <p>Ela permite que dados sejam escritos, lidos e  apagados. <input class="cor_rom"></p>
+        <p>Mesma finalidade da memoria rom porém em produções de escala menor. <input class="cor_eprom"></p>
+        <p>Ela permite que diversos endereços sejam apagados ou escritos numa só operação. <input class="cor_flash"></p>
+        <p>É um conjunto de leituras feitas de 15 em 15 minutos, compóem o consumo total apurado no ciclo de faturamento. <input class="cor_memoria"></p>
+        <p>Serve para subsistemas terem acesso direto á memória. <input class="cor_dma"></p>
+        <p>Unidade de seleção de chip é um mecanismo fundamental para permitir à CPU acessar 
+            memórias e/ou periféricos externos.
+            <input class="cor_cs"></p>
+        <p>Por onde envia os dados e informações. <input class="cor_sub"></p>
+        <p>Primeiro meodelo com frequência de 2.66GHz, com 4 núcleos e cache L3 de 8mb. <input class="cor_i5"></p>
+        <p>Possuem quatro núcleos, memória cache L3 de 8 MB, controlador de memória integrado, tecnologia Intel Turbo Boost, tecnologia Intel Hyper-Threading, tecnologia Intel HD Boost e ainda o recurso Intel QPI. <input class="cor_i7"></p>
+        <p>Processadores que possuem 2 núcleos. <input class="cor_dual"></p>
+        <p>Processadores que possuem 4 núcleos. <input class="cor_quad"></p><br><br>
+
+    </div>
 
 </body>
+
 </html>
 
 
 <script>
 
+    // inicio funções palavra registradores
 
-    function palavra_resgis(){
+    function regis_r() {
 
         var letra_r = inp_regis_r.value;
 
         if (letra_r == "r") {
 
-            inp_regis_r.style.color = "blue";
-            
+            inp_regis_r.style.color = "green";
+
         } else {
 
             inp_regis_r.style.color = "red";
 
         }
-        
+
     }
 
+    function regis_e() {
+        var letra_e = inp_regis_e.value;
 
+        if (letra_e == "e") {
+
+            inp_regis_e.style.color = "green";
+
+        } else {
+
+            inp_regis_e.style.color = "red";
+
+        }
+    }
+
+    function regis_g() {
+        var letra_g = inp_regis_g.value;
+
+        if (letra_g == "g") {
+
+            inp_regis_g.style.color = "green";
+
+        } else {
+
+            inp_regis_g.style.color = "red";
+
+        }
+    }
+
+    function regis_i() {
+        var letra_i = inp_regis_i.value;
+        if (letra_i == "i") {
+
+            inp_regis_i.style.color = "green";
+
+        } else {
+            inp_regis_i.style.color = "red";
+
+        }
+    }
+
+    function regis_s() {
+        var letra_s = inp_regis_s.value;
+        if (letra_s == "s") {
+
+            inp_regis_s.style.color = "green";
+
+        } else {
+            inp_regis_s.style.color = "red";
+
+        }
+    }
+
+    function regis_t() {
+        var letra_t = inp_regis_t.value;
+        if (letra_t == "t") {
+
+            inp_regis_t.style.color = "green";
+
+        } else {
+            inp_regis_t.style.color = "red";
+
+        }
+    }
+
+    function regis_r2() {
+        var letra_r2 = inp_regis_r2.value;
+
+        if (letra_r2 == "r") {
+
+            inp_regis_r2.style.color = "green";
+
+        } else {
+            inp_regis_r2.style.color = "red";
+
+        }
+    }
+
+    function regis_ula_a() {
+        var letra_a = inp_regis_ula_a.value;
+
+        if (letra_a == "a") {
+
+            inp_regis_ula_a.style.color = "green";
+
+        } else {
+            inp_regis_ula_a.style.color = "red";
+        }
+    }
+
+    function regis_d() {
+        var letra_d = inp_regis_d.value;
+
+        if (letra_d == "d") {
+
+            inp_regis_d.style.color = "green";
+
+        } else {
+            inp_regis_d.style.color = "red";
+
+        }
+    }
+
+    function regis_o() {
+        var letra_o = inp_regis_o.value;
+
+        if (letra_o == "o") {
+
+            inp_regis_o.style.color = "green";
+
+        } else {
+            inp_regis_o.style.color = "red";
+        }
+    }
+
+    function regis_r3() {
+
+        var letra_r3 = inp_regis_r3.value;
+
+        if (letra_r3 == "r") {
+
+            inp_regis_r3.style.color = "green";
+
+        } else {
+            inp_regis_r3.style.color = "red";
+        }
+    }
+
+    function regis_e2() {
+        var letra_e2 = inp_regis_e2.value;
+        if (letra_e2 == "e") {
+
+            inp_regis_e2.style.color = "green";
+
+        } else {
+            inp_regis_e2.style.color = "red";
+        }
+    }
+
+    function regis_s2() {
+        var letra_s2 = inp_regis_s2.value;
+
+        if (letra_s2 == "s") {
+
+            inp_regis_s2.style.color = "green";
+
+        } else {
+            inp_regis_s2.style.color = "red";
+        }
+    }
+
+    // fim funções palavra registradores
+
+
+    // inicio funções palavra ula
+    function ula_l() {
+        var letra_l = inp_ula_l.value;
+
+        if (letra_l == "l") {
+
+            inp_ula_l.style.color = "green";
+
+        } else {
+            inp_ula_l.style.color = "red";
+        }
+    }
+
+    function ula_cpu_u() {
+        var letra_u = inp_ula_cpu_u.value;
+
+        if (letra_u == "u") {
+
+            inp_ula_cpu_u.style.color = "green";
+
+        } else {
+            inp_ula_cpu_u.style.color = "red";
+        }
+    }
+    // fim funções palavra ula
+
+
+    // inicio funções palavra cpu
+    function cpu_c() {
+        var letra_c = inp_cpu_c.value;
+
+        if (letra_c == "c") {
+
+            inp_cpu_c.style.color = "green";
+
+        } else {
+            inp_cpu_c.style.color = "red";
+        }
+    }
+    function cpu_p() {
+        var letra_p = inp_cpu_p.value;
+
+        if (letra_p == "p") {
+
+            inp_cpu_p.style.color = "green";
+
+        } else {
+            inp_cpu_p.style.color = "red";
+        }
+    }
+    // fim funções palavra cpu
+
+
+    // inicio funções palavra sub
+
+    function cs_sub_s() {
+        var letra_s = inp_cs_sub_s.value;
+
+        if (letra_s == "s") {
+
+            inp_cs_sub_s.style.color = "green";
+
+        } else {
+            inp_cs_sub_s.style.color = "red";
+        }
+
+    }
+
+    function sub_u() {
+        var letra_u = inp_sub_u.value;
+
+        if (letra_u == "u") {
+
+            inp_sub_u.style.color = "green";
+
+        } else {
+            inp_sub_u.style.color = "red";
+        }
+
+    }
+
+    function sub_b() {
+        var letra_b = inp_sub_b.value;
+
+        if (letra_b == "b") {
+
+            inp_sub_b.style.color = "green";
+
+        } else {
+            inp_sub_b.style.color = "red";
+        }
+    }
+
+    function sub_a() {
+        var letra_a = inp_sub_a.value;
+
+        if (letra_a == "a") {
+
+            inp_sub_a.style.color = "green";
+
+        } else {
+            inp_sub_a.style.color = "red";
+        }
+
+    }
+
+    function sub_t() {
+        var letra_t = inp_sub_t.value;
+
+        if (letra_t == "t") {
+
+            inp_sub_t.style.color = "green";
+
+        } else {
+            inp_sub_t.style.color = "red";
+        }
+
+    }
+
+    function sub_a2() {
+        var letra_a2 = inp_sub_a2.value;
+
+        if (letra_a2 == "a") {
+
+            inp_sub_a2.style.color = "green";
+
+        } else {
+            inp_sub_a2.style.color = "red";
+        }
+
+    }
+
+    function sub_dual_d() {
+        var letra_d = inp_sub_dual_d.value;
+
+        if (letra_d == "d") {
+
+            inp_sub_dual_d.style.color = "green";
+
+        } else {
+            inp_sub_dual_d.style.color = "red";
+        }
+
+    }
+    // fim funções palavra sub
+
+
+
+    // inico funções palavra dual-core
+
+    function dual_u() {
+        var letra_u = inp_dual_u.value;
+
+        if (letra_u == "u") {
+
+            inp_dual_u.style.color = "green";
+
+        } else {
+            inp_dual_u.style.color = "red";
+        }
+    }
+
+    function dual_a() {
+        var letra_a = inp_dual_a.value;
+
+        if (letra_a == "a") {
+
+            inp_dual_a.style.color = "green";
+
+        } else {
+            inp_dual_a.style.color = "red";
+        }
+
+    }
+
+    function dual_l() {
+        var letra_l = inp_dual_l.value;
+
+        if (letra_l == "l") {
+
+            inp_dual_l.style.color = "green";
+
+        } else {
+            inp_dual_l.style.color = "red";
+        }
+
+    }
+
+    function dual_c() {
+        var letra_c = inp_dual_c.value;
+
+        if (letra_c == "c") {
+
+            inp_dual_c.style.color = "green";
+
+        } else {
+            inp_dual_c.style.color = "red";
+        }
+
+    }
+
+    function dual_o() {
+        var letra_o = inp_dual_o.value;
+
+        if (letra_o == "o") {
+
+            inp_dual_o.style.color = "green";
+
+        } else {
+            inp_dual_o.style.color = "red";
+        }
+
+    }
+
+    function dual_r() {
+        var letra_r = inp_dual_r.value;
+
+        if (letra_r == "r") {
+
+            inp_dual_r.style.color = "green";
+
+        } else {
+            inp_dual_r.style.color = "red";
+        }
+
+    }
+
+    function dual_e() {
+        var letra_e = inp_dual_e.value;
+
+        if (letra_e == "e") {
+
+            inp_dual_e.style.color = "green";
+
+        } else {
+            inp_dual_e.style.color = "red";
+        }
+
+    }
+    // fim funções palavra dual-core
+
+
+    // inicio funções palavra flash
+    function flash_f() {
+        var letra_f = inp_flash_f.value;
+
+        if (letra_f == "f") {
+
+            inp_flash_f.style.color = "green";
+
+        } else {
+            inp_flash_f.style.color = "red";
+        }
+
+    }
+
+    function flash_l() {
+        var letra_l = inp_flash_l.value;
+
+        if (letra_l == "l") {
+
+            inp_flash_l.style.color = "green";
+
+        } else {
+            inp_flash_l.style.color = "red";
+        }
+
+    }
+
+    function flash_a() {
+        var letra_a = inp_flash_a.value;
+
+        if (letra_a == "a") {
+
+            inp_flash_a.style.color = "green";
+
+        } else {
+            inp_flash_a.style.color = "red";
+        }
+
+    }
+
+    function flash_s() {
+        var letra_s = inp_flash_s.value;
+
+        if (letra_s == "s") {
+
+            inp_flash_s.style.color = "green";
+
+        } else {
+            inp_flash_s.style.color = "red";
+        }
+    }
+
+    function flash_h() {
+        var letra_h = inp_flash_h.value;
+
+        if (letra_h == "h") {
+
+            inp_flash_h.style.color = "green";
+
+        } else {
+            inp_flash_h.style.color = "red";
+        }
+    }
+    // fim funções palavra flash
+
+
+    // inico funções palavra memoria de massa
+    function memoria_m() {
+        var letra_m = inp_memoria_m.value;
+
+        if (letra_m == "m") {
+
+            inp_memoria_m.style.color = "green";
+
+        } else {
+            inp_memoria_m.style.color = "red";
+        }
+
+    }
+
+    function memoria_e() {
+        var letra_e = inp_memoria_e.value;
+
+        if (letra_e == "e") {
+
+            inp_memoria_e.style.color = "green";
+
+        } else {
+            inp_memoria_e.style.color = "red";
+        }
+
+    }
+
+    function memoria_m2() {
+        var letra_m = inp_memoria_m2.value;
+
+        if (letra_m == "m") {
+
+            inp_memoria_m2.style.color = "green";
+
+        } else {
+            inp_memoria_m2.style.color = "red";
+        }
+    }
+
+    function memoria_o() {
+        var letra_o = inp_memoria_o.value;
+
+        if (letra_o == "o") {
+
+            inp_memoria_o.style.color = "green";
+
+        } else {
+            inp_memoria_o.style.color = "red";
+        }
+
+    }
+
+    function memoria_r() {
+        var letra_r = inp_memoria_r.value;
+
+        if (letra_r == "r") {
+
+            inp_memoria_r.style.color = "green";
+
+        } else {
+            inp_memoria_r.style.color = "red";
+        }
+
+    }
+
+    function memoria_i() {
+        var letra_i = inp_memoria_i.value;
+
+        if (letra_i == "i") {
+
+            inp_memoria_i.style.color = "green";
+
+        } else {
+            inp_memoria_i.style.color = "red";
+        }
+
+    }
+
+    function memoria_a() {
+        var letra_a = inp_memoria_a.value;
+
+        if (letra_a == "a") {
+
+            inp_memoria_a.style.color = "green";
+
+        } else {
+            inp_memoria_a.style.color = "red";
+        }
+
+    }
+
+    function memoria_d() {
+        var letra_d = inp_memoria_d.value;
+
+        if (letra_d == "d") {
+
+            inp_memoria_d.style.color = "green";
+
+        } else {
+            inp_memoria_d.style.color = "red";
+        }
+
+    }
+
+    function memoria_e2() {
+        var letra_e = inp_memoria_e2.value;
+
+        if (letra_e == "e") {
+
+            inp_memoria_e2.style.color = "green";
+
+        } else {
+            inp_memoria_e2.style.color = "red";
+        }
+
+    }
+
+    function memoria_m3() {
+        var letra_m = inp_memoria_m3.value;
+
+        if (letra_m == "m") {
+
+            inp_memoria_m3.style.color = "green";
+
+        } else {
+            inp_memoria_m3.style.color = "red";
+        }
+
+    }
+
+    function memoria_s() {
+        var letra_s = inp_memoria_s.value;
+
+        if (letra_s == "s") {
+
+            inp_memoria_s.style.color = "green";
+
+        } else {
+            inp_memoria_s.style.color = "red";
+        }
+
+    }
+
+    function memoria_s2() {
+        var letra_s = inp_memoria_s2.value;
+
+        if (letra_s == "s") {
+
+            inp_memoria_s2.style.color = "green";
+
+        } else {
+            inp_memoria_s2.style.color = "red";
+        }
+
+
+    }
+
+    // fim funções palavra memoria de massa
+
+
+
+    // inicio funções palavra quad-core
+    function quad_q() {
+        var letra_q = inp_quad_q.value;
+
+        if (letra_q == "q") {
+
+            inp_quad_q.style.color = "green";
+
+        } else {
+            inp_quad_q.style.color = "red";
+        }
+
+    }
+
+    function quad_u() {
+        var letra_u = inp_quad_u.value;
+
+        if (letra_u == "u") {
+
+            inp_quad_u.style.color = "green";
+
+        } else {
+            inp_quad_u.style.color = "red";
+        }
+
+    }
+
+    function quad_a() {
+        var letra_a = inp_quad_a.value;
+
+        if (letra_a == "a") {
+
+            inp_quad_a.style.color = "green";
+
+        } else {
+            inp_quad_a.style.color = "red";
+        }
+
+    }
+
+    function quad_d() {
+        var letra_d = inp_quad_d.value;
+
+        if (letra_d == "d") {
+
+            inp_quad_d.style.color = "green";
+
+        } else {
+            inp_quad_d.style.color = "red";
+        }
+
+    }
+
+    function quad_o() {
+        var letra_o = inp_quad_o.value;
+
+        if (letra_o == "o") {
+
+            inp_quad_o.style.color = "green";
+
+        } else {
+            inp_quad_o.style.color = "red";
+        }
+
+    }
+
+    function quad_r() {
+        var letra_r = inp_quad_r.value;
+
+        if (letra_r == "r") {
+
+            inp_quad_r.style.color = "green";
+
+        } else {
+            inp_quad_r.style.color = "red";
+        }
+
+    }
+
+    function quad_e() {
+        var letra_e = inp_quad_e.value;
+
+        if (letra_e == "e") {
+
+            inp_quad_e.style.color = "green";
+
+        } else {
+            inp_quad_e.style.color = "red";
+        }
+
+    }
+    // fim funções palavra quad-core
+
+
+    // inicio funções palavra adress-bus
+    function adress_a() {
+        var letra_a = inp_adress_a.value;
+
+        if (letra_a == "a") {
+
+            inp_adress_a.style.color = "green";
+
+        } else {
+            inp_adress_a.style.color = "red";
+        }
+
+    }
+
+    function adress_d() {
+        var letra_d = inp_adress_d.value;
+
+        if (letra_d == "d") {
+
+            inp_adress_d.style.color = "green";
+
+        } else {
+            inp_adress_d.style.color = "red";
+        }
+
+    }
+
+    function adress_r() {
+        var letra_r = inp_adress_r.value;
+
+        if (letra_r == "r") {
+
+            inp_adress_r.style.color = "green";
+
+        } else {
+            inp_adress_r.style.color = "red";
+        }
+
+    }
+
+    function adress_s1() {
+        var letra_s = inp_adress_s1.value;
+
+        if (letra_s == "s") {
+
+            inp_adress_s1.style.color = "green";
+
+        } else {
+            inp_adress_s1.style.color = "red";
+        }
+
+    }
+
+    function adress_s2() {
+        var letra_s = inp_adress_s2.value;
+
+        if (letra_s == "s") {
+
+            inp_adress_s2.style.color = "green";
+
+        } else {
+            inp_adress_s2.style.color = "red";
+        }
+
+    }
+
+    function adress_b() {
+        var letra_b = inp_adress_b.value;
+
+        if (letra_b == "b") {
+
+            inp_adress_b.style.color = "green";
+
+        } else {
+            inp_adress_b.style.color = "red";
+        }
+
+    }
+
+    function adress_u() {
+        var letra_u = inp_adress_u.value;
+
+        if (letra_u == "u") {
+
+            inp_adress_u.style.color = "green";
+
+        } else {
+            inp_adress_u.style.color = "red";
+        }
+
+    }
+
+    function adress_s3() {
+        var letra_s = inp_adress_s3.value;
+
+        if (letra_s == "s") {
+
+            inp_adress_s3.style.color = "green";
+
+        } else {
+            inp_adress_s3.style.color = "red";
+        }
+
+    }
+    // fim funções palavra adress-bus
+
+
+    // inicio funções palavra eprom
+    function eprom_m() {
+        var letra_m = inp_eprom_m.value;
+
+        if (letra_m == "m") {
+
+            inp_eprom_m.style.color = "green";
+
+        } else {
+            inp_eprom_m.style.color = "red";
+        }
+
+    }
+
+    function eprom_o() {
+        var letra_o = inp_eprom_o.value;
+
+        if (letra_o == "o") {
+
+            inp_eprom_o.style.color = "green";
+
+        } else {
+            inp_eprom_o.style.color = "red";
+        }
+
+    }
+
+    function eprom_r() {
+        var letra_r = inp_eprom_r.value;
+
+        if (letra_r == "r") {
+
+            inp_eprom_r.style.color = "green";
+
+        } else {
+            inp_eprom_r.style.color = "red";
+        }
+
+    }
+
+    function eprom_p() {
+        var letra_p = inp_eprom_p.value;
+
+        if (letra_p == "p") {
+
+            inp_eprom_p.style.color = "green";
+
+        } else {
+            inp_eprom_p.style.color = "red";
+        }
+
+    }
+    // fim funções palavra eprom
+
+
+    // inicio funções palavra rom
+    function rom_r() {
+        var letra_r = inp_rom_r.value;
+
+        if (letra_r == "r") {
+
+            inp_rom_r.style.color = "green";
+
+        } else {
+            inp_rom_r.style.color = "red";
+        }
+
+    }
+
+    function rom_o() {
+        var letra_o = inp_rom_o.value;
+
+        if (letra_o == "o") {
+
+            inp_rom_o.style.color = "green";
+
+        } else {
+            inp_rom_o.style.color = "red";
+        }
+
+    }
+
+    function rom_m() {
+        var letra_m = inp_rom_m.value;
+
+        if (letra_m == "m") {
+
+            inp_rom_m.style.color = "green";
+
+        } else {
+            inp_rom_m.style.color = "red";
+        }
+
+    }
+    // fim funções palavra rom
+
+
+    // inicio funções palavra ram
+    function ram_r() {
+        var letra_r = inp_ram_r.value;
+
+        if (letra_r == "r") {
+
+            inp_ram_r.style.color = "green";
+
+        } else {
+            inp_ram_r.style.color = "red";
+        }
+
+    }
+
+    function ram_a() {
+        var letra_a = inp_ram_a.value;
+
+        if (letra_a == "a") {
+
+            inp_ram_a.style.color = "green";
+
+        } else {
+            inp_ram_a.style.color = "red";
+        }
+
+    }
+
+    function ram_m() {
+        var letra_m = inp_ram_m.value;
+
+        if (letra_m == "m") {
+
+            inp_ram_m.style.color = "green";
+
+        } else {
+            inp_ram_m.style.color = "red";
+        }
+
+    }
+    // fim funções palavra rom
+
+
+
+    // inicio funções palavra i5 e i7
+    function i5_5() {
+        var letra_5 = inp_i5_5.value;
+
+        if (letra_5 == 5) {
+
+            inp_i5_5.style.color = "green";
+
+        } else {
+            inp_i5_5.style.color = "red";
+        }
+
+    }
+
+    function i7_7() {
+        var letra_7 = inp_i7_7.value;
+
+        if (letra_7 == 7) {
+
+            inp_i7_7.style.color = "green";
+
+        } else {
+            inp_i7_7.style.color = "red";
+        }
+
+    }
+
+    // fim funções palavra i5 e i7
 
 
 </script>

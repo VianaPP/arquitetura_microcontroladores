@@ -1,0 +1,51 @@
+.cor_regis{
+    background-color: teal;
+}
+.cor_ula{
+    background-color: rgb(180, 45, 180);
+}
+.cor_cpu{
+    background-color: chartreuse;
+}
+.cor_flash{
+    background-color: chocolate;
+}
+.cor_cs{
+    background-color: crimson;
+}
+.cor_sub{
+    background-color: cyan;
+}
+.cor_dual{
+    background-color: navy;
+}
+.cor_memoria{
+    background-color: deeppink;
+}
+.cor_i5{
+    background-color: dimgray;
+}
+.cor_rom{
+    background-color: mediumseagreen;
+}
+.cor_adress{
+    background-color: mediumslateblue;
+}
+.cor_quad{
+    background-color: yellow;
+}
+.cor_eprom{
+    background-color: orangered;
+}
+.cor_ram{
+    background-color: peru;
+}
+.cor_i7{
+    background-color: royalblue;
+}
+.cor_dma{
+    background-color: floralwhite;
+}
+.cor_div{
+    background-color: black;
+}
